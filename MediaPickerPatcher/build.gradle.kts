@@ -1,9 +1,11 @@
-version = "2.0.1"
-description = "Replaces the document picker with one that opens the default gallery app."
+version = "2.0.2"
+description = "Replaces the document picker with one that opens the document picker with file providers."
 
 aliucord {
     changelog.set(
         """
+            # 2.0.2
+            * Fix description
             # 2.0.1
             * Remove long-press default action
             # 2.0.0
