@@ -1,4 +1,4 @@
-version = "2.0.6"
+version = "2.0.7"
 description = "Replaces the document picker with one that opens the document picker with file providers."
 
 aliucord {
