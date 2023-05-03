@@ -44,8 +44,8 @@ public class MediaPickerPatcher extends Plugin {
 				//pickerButton.setVisibility(View.GONE);
 				
 				pickerButton.setOnLongClickListener(view -> {
-					Intent intent = new Intent(Intent.ACTION_PICK);
-					intent.setType("image/*|video/*");
+					Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+					intent.setType("*/*");
 					intent.putExtra(Intent.EXTRA_MIME_TYPES, new String[] {"image/*", "video/*"});
 					pickerObj.startActivityForResult(intent, 5968);
 					return true;
