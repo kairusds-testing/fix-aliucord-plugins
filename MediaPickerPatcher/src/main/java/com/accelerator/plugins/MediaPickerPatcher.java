@@ -42,7 +42,15 @@ public class MediaPickerPatcher extends Plugin {
 				var pickerButton = (ImageView)pickerObj.n;
 				
 				//pickerButton.setVisibility(View.GONE);
-
+				
+				pickerButton.setOnLongClickListener(view -> {
+					Intent intent = new Intent(Intent.ACTION_PICK);
+					intent.setType("image/*|video/*");
+					intent.putExtra(Intent.EXTRA_MIME_TYPES, new String[] {"image/*", "video/*"});
+					pickerObj.startActivityForResult(intent, 5968);
+					return true;
+				});
+				
 				pickerButton.setOnClickListener( new View.OnClickListener() {
 					@Override
 					public void onClick (View v) {

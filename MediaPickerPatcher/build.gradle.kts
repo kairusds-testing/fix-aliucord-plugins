@@ -1,9 +1,11 @@
-version = "2.0.2"
+version = "2.0.3"
 description = "Replaces the document picker with one that opens the document picker with file providers."
 
 aliucord {
     changelog.set(
         """
+            # 2.0.3
+            * Debug build
             # 2.0.2
             * Fix description
             # 2.0.1
