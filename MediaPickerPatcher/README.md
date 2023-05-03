@@ -1,3 +1,3 @@
-# MyFirstPatch
+# MediaPickerPatcher
 
-Adds a very silly patch that adds an embed containing "Hello World" to every message
+Replaces the document picker with one that opens the default gallery app. Can also long press the open file button for the original document picker.
