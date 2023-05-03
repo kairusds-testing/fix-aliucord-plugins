@@ -1,9 +1,11 @@
-version = "2.0.0"
-description = "Replaces the document picker with one that opens the default gallery app. Can also long press the open file button for the original document picker."
+version = "2.0.1"
+description = "Replaces the document picker with one that opens the default gallery app."
 
 aliucord {
     changelog.set(
         """
+            # 2.0.1
+            * Remove long-press default action
             # 2.0.0
             * Custom build
             # 1.0.91
